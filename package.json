@@ -22,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://georgearhinful.github.io/school-site/",
+  "homepage": "https://georgearhinful.github.io/school",
   "eslintConfig": {
     "extends": "react-app"
   },
