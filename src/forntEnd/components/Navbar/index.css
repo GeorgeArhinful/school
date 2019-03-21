@@ -1,0 +1,43 @@
+.mylinks div {
+ -moz-transition: height 3s;
+  transition: height 3s;
+   -webkit-transition: height 3s;
+    -o-transition: height 3s;
+ 
+}
+
+.mylinks div:hover {
+ -moz-transition: height 3s;
+ transition: height 3s;
+ -webkit-transition: height 3s;
+ -o-transition: height 3s;
+}
+.mylinks div:hover .lost {
+    -moz-transition: height 3s;
+    transition: height 3s;
+    -webkit-transition: height 3s;
+    -o-transition: height 3s;
+    height: inherit;
+    position: absolute;
+    display: block;
+    z-index: 4;
+}
+.lost{
+width: 100vw;
+left:0;
+right: 0;
+}
+.lost{
+   display: none
+}
+
+.nav-Link:hover{
+    color: white;
+    text-decoration: none!important
+}
+.text-decoration-none{
+    text-decoration: none!important
+}
+.cursor {
+    cursor: pointer
+}

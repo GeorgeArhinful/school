@@ -1,0 +1,16 @@
+.formcontain{
+   min-height: 90vh;
+    background-color: rgb(249,249,250);
+}
+.form-shadow{
+    box-shadow: 0px 2px 5px 1px #CCCCCC;
+    -o-box-shadow: 0px 2px 5px 1px #CCCCCC;
+    -moz-box-shadow: 0px 2px 5px 1px #CCCCCC;
+    -webkit-box-shadow: 0px 2px 5px 1px #CCCCCC;
+    background-color: white;
+}
+.my-signUp-input{
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}

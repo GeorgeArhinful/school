@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  width: 100%;
+}
+/* navbar */
+.nav-position{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+
+
+/* Navbar */
+
+/* Header */
+.bg-vidoe , .bg-video-cover{
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(41, 39, 39,0.6);
+  border-bottom: 8px solid #f3c761;
+}
+.header-bottom-nav{
+  box-shadow: 2px 4px solid gray;
+}
+.header-bottom-nav div{
+  border-right: 1px solid #ececec;
+  font-size: 16px;
+  box-shadow:0 5px 5px 0 rgba(0,0,0,.25);
+  height: 10vh;
+  display: flex;
+}
+.image-bg, .image-bg-cover{
+  height: 100%;
+  font-weight: 700!important;
+  text-transform: uppercase;
+}
+
+.image-bg{
+  /* background-image: url('./image/pexels-photo-1166657.jpeg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.image-bg:hover{
+  background-color: transparent;
+  background-image: none;
+}
+.image-bg:hover .image-bg-cover{
+  background-color: transparent;
+}
+
+.image-bg-cover{
+  background-color: rgba(102, 51, 153,0.7)
+}
+.small-side-navbar-section{
+  padding: 6em 1em;
+  /* background-color: rgba(102, 51, 153,0.008) */
+
+}
+.small-side-navbar  li{
+  list-style-type: none!important;
+  border-bottom: 1px solid rgb(241, 189, 189);
+   
+}
+.header-bottom-nav div a, .small-side-navbar  a{
+  text-decoration: none!important;
+  font-weight: 900;
+  font-size: 16;
+  text-transform: uppercase;
+  padding: 2em 1em;
+  ;position: relative;
+  justify-items: center
+}
+.hr{
+  border-bottom:4px solid white;
+}
+.image-bg-link{
+  text-decoration: none!important;
+}
+.small-side-navbar li {
+    position: relative;
+}
+
+.bg-image80 , .bg-image-cover, .bg-image-cover video{
+  height: 100vh!important;
+  width: 100%!important;
+}
+.bg-image-cover{
+  transition: all 7s ease-in-out 0s;
+  -webkit-transition: all 500ms ease-in-out 0s;
+}
+.bg-image-cover:hover{
+  background-color: rgba(16, 22, 26,0.4);
+  transition: all 500ms ease-in-out 0s;
+  -webkit-transition: all 500ms ease-in-out 0s;
+}
+.bg-image80{
+  background-image: url(./image/code1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.box-section{
+  border: 1px solid rgb(209, 208, 208)!important;
+  transition: 6s color;
+}
+
+
+.box-section-text h4{
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 21px!important;
+  color: #10161A;
+}
+.box-section-text p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.box-section:hover:after{
+ width: 100%;
+}
+.box-section:hover h4{
+  color: #fff!important;
+  -webkit-transition: 0.2s width;
+  transition: 0.2s width;
+ }
+.box-section::after {
+  content: "";
+  background-color: #1C1D21;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  z-index: -1;
+  -webkit-transition: 0.2s width;
+  transition: 0.2s width;
+}
+/* Header */
+
+/* Contact style */
+.border-right-dark{
+  border-right: 3px solid black!important;
+  color: #fdbd10;
+  font-size: 28px;
+  padding: .8em .8em .8em .0em;
+}
+.show-navigation{
+  min-height: 10vh;
+}
+.about-school-header-image{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-school-header-image , .about-school-header-cover{
+width: 100%;
+height: 65vh;
+}
+/* .about-school-header-image{
+  background-image: url('./image/pexels-photo-1007023.jpeg')
+} */
+.btn-fade{
+  background-color: transparent!important;
+}
+.btn-hover:hover{
+  background-color: rgb(41, 131, 248);
+  color: white;
+}
+.hover-to-display-child{
+  -webkit-transition: 0.5s all;
+  -o-transition:0.6s all;
+  -moz-transition: 0.6 all;
+  transition: 0.6s all;
+
+  background-image: url(./image/pexels-photo-1305305.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+}
+.child-to-display{
+  background: #ffffffc2;
+  border: 4px solid #e2e2e2;
+  padding: 2em;
+  height: 300px;
+  display: none;
+  -webkit-transition: 0.5s all;
+  -o-transition:0.6s all;
+  -moz-transition: 0.6 all;
+  transition: 0.6s all; 
+}
+
+.hover-to-display-child:hover .child-to-display{
+  display: inherit;
+  -webkit-transition: 0.5s all;
+  -o-transition:0.6s all;
+  -moz-transition: 0.6 all;
+  transition: 0.6s all;
+}
+.hover-to-display-child:hover a{
+  text-decoration: none;
+  color: #10161A;
+  font-weight: 800;
+}
+.link-icons a {
+  background-color: transparent;
+}
+.link-icons a i{
+   border-radius: 50%;
+   padding: 0.5em;
+   border: 2px solid #fdbd10;
+   height: 35px;
+   width: 35px;
+   padding: 10px;
+   font-size: 16px;
+   text-align: center;
+   margin-right: 5px;
+}
+.link-icons a :hover{
+  background-color: black;
+}
+.team-info{
+  font-size: 18px;
+  font-weight: 700;
+}
+.team-image img{
+ vertical-align: middle;
+ border-style: none;
+
+}
+.team-info-holder{
+  box-shadow: -2px 0px 2px 1px #10161A
+}
+.bg-vision{
+  background-color: rgb(0, 0, 0)
+}
+.footer-links{
+
+}
+.footer-links ul li,.footer-links ul a{
+  list-style-type: none;
+  text-decoration: none!important;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(154, 158, 158)!important;
+}
+.footer-links ul a:hover{
+  color: rgb(222, 224, 224)!important;
+}
+.service i{
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  color: white;
+  font-size: 2em;
+  background-color: #fdbd10;
+  padding: 10px;
+}
+.service-bg-image{
+background-image: url(./image/pexels-photo-1007023.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.service-bg-image-cover{
+  background-color: rgba(56, 55, 55,0.4);
+}
+.program a{
+  /* border-bottom: 1px solid gray; */
+  border-top: 1px solid gray;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fdbd10!important;
+}
+.program a:hover{
+  background-color: #fdbd10;
+  color: #fff!important;
+  text-decoration: none;
+}
+.admission-bg{
+  background-image: url(./image/pexels-photo-1305305.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  width: 100%;
+}
+.admission-bg-cover{
+  background-color: rgba(46, 47, 48,0.9);
+  height: 30vh;
+  width: 100%;
+}
+.border-right{
+  border-right: 1px solid rgb(92, 92, 92)
+}
+.graduate-link{
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.fa{
+  font-weight: 900;
+}
+
+
+/* Gallary */
+.gallary{
+ 
+}
+.gallary-image, .gallary-view{
+  height: 100%;
+}
+.gallary-view{
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  transition: 1s ease-in-out all;
+  background-color:transparent;
+
+}
+.gallary-view:hover .links h4{
+  transition: 0.7s ease-in-out all;
+   background-color: orange;
+   border-radius: 50%
+}
+.gallary-view:hover{
+  color: rgb(255, 255, 255);
+  transition: 1s ease-in-out all;
+  background-color: rgba(28,29,33,0.8);
+  opacity: 0.8;
+}
+.image-boader{
+  border-radius: 20px;
+  border: 2px solid whitesmoke
+}
+.course-div{
+  box-shadow :0px 0px 10px rgba(0, 0, 0, 0.12);
+    transition: all 3s ease;
+  box-shadow: 0px 0px 10px rgba(75, 51, 51, 0.12);
+  -webkit-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.12);
+  -o-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.12);
+}
+
+.course-div:hover {
+  transition: all 3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:0px 0px 10px rgba(0, 0, 0.5);
+  -moz-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+  -o-box-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.text-black{
+  color: black;
+}
+.text-white{
+  color: white;
+}
+.course-img-cover-div{
+  top:0;
+  display: none
+}
+.course-div:hover .course-img-cover-div {
+  transition: all 3s ease;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.493)
+}
+.link-icon  a  {
+  border-radius: 50%;
+  border: 0;
+  background-color: gold
+}
+.text-orange{
+  color: orange;
+}
+.bg-orange{
+  background-color: orange;
+}
+button:hover{
+  color: rgb(169, 169, 169);
+  background-color: gold
+}
+a{
+  text-decoration: none;
+}
+/* Gallary */
+/* .contact-right{
+    border-left: 3px solid black;
+} */
+
+/* Contact style */
